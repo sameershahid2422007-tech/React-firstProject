@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 // const name = "SAMEER";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
     <h1 className='blank'>Hello {name}</h1> */}
 
 <Navbar title="TextUtils" about2="About" />
+<div className="container my-3">
+<TextForm heading="Enter the text to analyze"/>
+</div>
     </>
   );
 }
