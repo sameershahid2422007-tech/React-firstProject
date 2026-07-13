@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // const name = "SAMEER";
@@ -29,6 +30,7 @@ function App() {
 <Navbar title="TextUtils" about2="About" />
 <div className="container my-3">
 <TextForm heading="Enter the text to analyze"/>
+{/* <About/> */}
 </div>
     </>
   );
