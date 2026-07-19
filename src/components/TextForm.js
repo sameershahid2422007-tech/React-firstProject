@@ -7,23 +7,28 @@ export default function TextForm(props) {
   const handleUpClick = ()=>{
     let newText = text.toUpperCase();
     setText(newText)
+    props.showAlert("Converted To Uppercase", "success")
   }
   const handleDownClick = ()=>{
     let newText = text.toLowerCase();
     setText(newText)
+    props.showAlert("Converted To Lowercase", "success")
   }
   const handleResertClick = ()=>{
     let newText = "";
     setText(newText)
+    props.showAlert("Text Removed", "success")
   }
   const handleSpaces = ()=>{
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
+    props.showAlert("Removed Extra Spaces", "success")
   }
   const handleCopyClick = ()=>{
     let text = document.getElementById("myBox")
     text.select();
     navigator.clipboard.writeText(text.value)
+    props.showAlert("Text Copyied to clipboard", "success")
   }
 
   // if we use target use (event)
